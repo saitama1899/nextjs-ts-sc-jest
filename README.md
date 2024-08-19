@@ -1,0 +1,1 @@
+Scaffold frontend project that uses nextjs, styled components, typescript, jest, biomejs, esmodules and aliased imports
