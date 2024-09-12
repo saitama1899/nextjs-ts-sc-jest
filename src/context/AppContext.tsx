@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { type ReactNode, createContext, useContext, useState } from "react";
 
 interface AppContextProps {
@@ -13,12 +13,11 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({
 }) => {
 	const [loading, setLoading] = useState(false);
 
-
 	return (
 		<AppContext.Provider
 			value={{
 				loading,
-				setLoading
+				setLoading,
 			}}
 		>
 			{children}
